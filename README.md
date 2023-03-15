@@ -1,0 +1,1 @@
+In this project, I will implement HTML, CSS, and javascript into a working calculator.  I will be using vanilla javascript.
