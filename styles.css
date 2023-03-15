@@ -1,0 +1,38 @@
+#calculator {
+    width: 50%;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #737272;
+}
+
+#output {
+    display: flex;
+    color: white;
+    border: 1px solid red;
+    justify-content: flex-end;
+    align-items: center;
+    height: 15%;
+    font-size: 50px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#buttons {
+    display: flex;
+    border: 1px solid red;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    gap: 2px;
+    height: 80%;
+    align-content: center;
+}
+
+#equals {
+    flex-grow: 2;
+}
+
+button {
+    width: 24%;
+    height: 50px;
+}
