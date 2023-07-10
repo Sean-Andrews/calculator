@@ -2,6 +2,11 @@
     font-family: "Orbitron", sans-serif;
 }
 
+body {
+    height: 100%;
+    background-image: linear-gradient(to right, rgb(179, 179, 250), rgb(250, 111, 111));
+}
+
 #title {
     text-align: center;
 }
@@ -49,4 +54,9 @@
 button {
     width: 24%;
     height: 50px;
+    background-color: #beb6b6;
+}
+
+button:hover {
+    background-color: #a4a1a1;
 }
