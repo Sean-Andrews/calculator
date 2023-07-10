@@ -34,11 +34,12 @@ function getButtonValue() {
             operator = true;
             sign = value;
             valueOne = display.textContent;
-            display.textContent = "";
         } else if (value === "=") {
             getAnswer();
         } else if (value === "CC") {
             display.textContent = "";
+            operator = false;
+            valueOne = "";
         } else if (operator === true) {
             displayValue(value);
             valueTwo = display.textContent;
@@ -49,7 +50,14 @@ function getButtonValue() {
 }
 
 function displayValue(value) {
-    display.textContent += value;
+    if (operator === true) {
+        display.textContent = "";
+        display.textContent += value;
+        operator = false;
+    } else {
+        display.textContent += value;
+        valueTwo = display.textContent;
+    }    
 }
 
 function getAnswer() {
