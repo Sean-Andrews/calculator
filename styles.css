@@ -1,3 +1,6 @@
+* {
+    font-family: "Orbitron", sans-serif;
+}
 #calculator {
     width: 50%;
     height: 500px;
